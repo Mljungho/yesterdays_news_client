@@ -1,0 +1,27 @@
+.boxCom {
+  float: left;
+  width: 200px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 2px solid grey;
+}
+
+.boxArticle {
+  float: left;
+  width: 450px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  /* border: 2px solid blue; */
+}
+
+.articleFont {
+	--font: "EB Garamond", serif;
+	--font-title: "Playfair Display", serif;
+	--font-sans-serif: "Manrope", sans-serif;
+	--black: #1c1f33;
+	--black--acc: #222;
+	--gray: #eee;
+	--gray-1: #ededed;
+}
