@@ -2,7 +2,7 @@
   float: left;
   width: 200px;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 50px;
   padding: 5px;
   border: 2px solid grey;
 }
@@ -11,7 +11,7 @@
   float: left;
   width: 800px;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 50px;
   padding: 5px;
   /* border: 2px solid blue; */
 }
@@ -24,4 +24,10 @@
 	--black--acc: #222;
 	--gray: #eee;
 	--gray-1: #ededed;
+  /* 
+  doesn't look good. Tried to aplly to Article Card as class. 
+
+  class="articleFont"
+
+  */
 }

@@ -5,14 +5,14 @@ import { AppBar, Box, Toolbar, Typography, Button } from "@mui/material";
 const NavigationBar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar>
         <Toolbar>
           <Typography
             data-cy="header"
             variant="h6"
             component={Link}
             to="/"
-            sx={{ flexGrow: 1, textDecoration: 'none', color: 'white' }}
+            sx={{ flexGrow: 1, textDecoration: "none", color: "white" }}
           >
             Yesterdays News
           </Typography>
@@ -21,6 +21,7 @@ const NavigationBar = () => {
             component={Link}
             to="/sports"
             color="inherit"
+            style={{ display: "flex", justifyContent: "left" }}
           >
             Sports
           </Button>
@@ -29,6 +30,7 @@ const NavigationBar = () => {
             component={Link}
             to="/politics"
             color="inherit"
+            style={{ display: "flex", justifyContent: "left" }}
           >
             Politics
           </Button>
@@ -37,6 +39,7 @@ const NavigationBar = () => {
             component={Link}
             to="/economy"
             color="inherit"
+            style={{ display: "flex", justifyContent: "left" }}
           >
             Economy
           </Button>

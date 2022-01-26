@@ -19,13 +19,13 @@ const SingleArticle = () => {
 
   return (
     <Box sx={{ m: 10 }}>
-      <Typography class="articleFont" gutterBottom variant="h3" data-cy="article-title">
+      <Typography gutterBottom variant="h3" data-cy="article-title">
         {article.title}
       </Typography>
-      <Typography class="articleFont" gutterBottom variant="subtitle1" data-cy="article-body">
+      <Typography gutterBottom variant="subtitle1" data-cy="article-body">
         {article.body}
       </Typography>
-      <Typography class="articleFont" gutterBottom variant="caption" data-cy="article-created">
+      <Typography gutterBottom variant="caption" data-cy="article-created">
         {article.published}
       </Typography>
     </Box>
