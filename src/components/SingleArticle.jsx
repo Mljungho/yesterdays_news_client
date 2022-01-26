@@ -3,7 +3,7 @@ import Articles from "../modules/Articles";
 import { useParams } from "react-router-dom";
 import { Typography } from "@mui/material";
 import Box from "@mui/material/Box";
-import ArticleCss from './ArticleCss.css'
+import ArticleCss from "../styles/ArticleCss.css";
 
 const SingleArticle = () => {
   const [article, setArticle] = useState({});

@@ -4,7 +4,7 @@ import Articles from "../modules/Articles";
 import ArticleCard from "./ArticleCard";
 import { Grid, Container, Alert } from "@mui/material";
 import { Box } from "@mui/material";
-import ArticleCss from "./ArticleCss.css";
+import ArticleCss from "../styles/ArticleCss.css";
 
 //The function needs to be updated with relevant naming to fetch 
 //different objects. I.e fetchAdd, setAdd etc.

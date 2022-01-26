@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-import ArticleCss from "./ArticleCss.css";
+import ArticleCss from "../styles/ArticleCss.css";
 import CommercialCard from "./CommercialCardList";
 import ArticleCardList from "./ArticleCardList";
 

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Articles from "../modules/Articles";
 import ArticleCard from "./ArticleCard";
 import { Grid, Container, Alert } from "@mui/material";
-import ArticleCss from "./ArticleCss.css";
+import ArticleCss from "../styles/ArticleCss.css";
 
 const ArticleCardList = () => {
   const { category } = useParams();
