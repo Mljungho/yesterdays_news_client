@@ -25,6 +25,14 @@ describe("A user visiting the application can display articles by categories", (
         .should("have.length", 4);
     });
 
+    it("is expected to see a collection of adds", () => {
+      cy.get("[data-cy=commercial-collection]")
+        .children()
+        .should("have.length", 4);
+    });
+
+    
+
     it("is expected to see politics article title", () => {
       cy.get("[data-cy=article-collection]")
         .children()

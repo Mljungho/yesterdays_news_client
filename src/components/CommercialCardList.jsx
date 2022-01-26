@@ -6,11 +6,15 @@ import { Grid, Container, Alert } from "@mui/material";
 import { Box } from "@mui/material";
 import ArticleCss from "./ArticleCss.css";
 
+//The function needs to be updated with relevant naming to fetch 
+//different objects. I.e fetchAdd, setAdd etc.
+
 const CommercialCardList = () => {
   const { category } = useParams();
   const [articles, setArticles] = useState([]);
   const [message, setMessage] = useState();
 
+  //fetchAdd
   const fetchArticles = async () => {
     const data = await Articles.index(category);
     if (data.message || data.length === 0) {
@@ -35,7 +39,7 @@ const CommercialCardList = () => {
 
   return (
     <Grid>
-      <Grid container spacing={4} data-cy="article-collection">
+      <Grid container spacing={4} data-cy="commercial-collection">
         {collectionOfArticles}
       </Grid>
     </Grid>
