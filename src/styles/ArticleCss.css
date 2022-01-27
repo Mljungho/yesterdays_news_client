@@ -1,15 +1,39 @@
-.boxCom {
+.main_page {
+  background: #ffffff;
+}
+
+.boxComLeft {
   float: left;
   width: 200px;
   margin-left: 10px;
-  margin-top: 50px;
+  margin-top: 60px;
   padding: 5px;
   border: 2px solid grey;
+  background: #ffffff;
+}
+
+.boxComRight {
+  float: right;
+  width: 200px;
+  margin-right: 10px;
+  margin-top: 60px;
+  padding: 5px;
+  border: 2px solid grey;
+  background: #ffffff;
+}
+.boxArticleSide {
+  float: right;
+  width: 500px;
+  margin-top: 0px;
+  padding: 15px;
+  border: 2px solid grey;
+  background: #ffffff;
+  transform: scale(0.7);
 }
 
 .boxArticle {
   float: left;
-  width: 800px;
+  width: 655px;
   margin-left: 10px;
   margin-top: 50px;
   padding: 5px;
@@ -17,13 +41,13 @@
 }
 
 .articleFont {
-	--font: "EB Garamond", serif;
-	--font-title: "Playfair Display", serif;
-	--font-sans-serif: "Manrope", sans-serif;
-	--black: #1c1f33;
-	--black--acc: #222;
-	--gray: #eee;
-	--gray-1: #ededed;
+  --font: "EB Garamond", serif;
+  --font-title: "Playfair Display", serif;
+  --font-sans-serif: "Manrope", sans-serif;
+  --black: #1c1f33;
+  --black--acc: #222;
+  --gray: #eee;
+  --gray-1: #ededed;
   /* 
   doesn't look good. Tried to aplly to Article Card as class. 
 
