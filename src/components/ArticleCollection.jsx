@@ -4,6 +4,9 @@ import ArticleCss from "../styles/ArticleCss.css";
 import CommercialCard from "./CommercialCardList";
 import ArticleCardList from "./ArticleCardList";
 import SideArticleList from "./SideArticleList";
+import CommercialCardListRight from "./CommercialCardListRight";
+import CommercialCardList from "./CommercialCardList";
+
 
 const ArticleCollection = () => {
   return (
@@ -16,7 +19,7 @@ const ArticleCollection = () => {
       </Box>
 
       <Box class="boxComRight" id="Commercial_feed">Sponsored by:
-        <CommercialCard />
+        <CommercialCardListRight />
       </Box>
 
       <Box class="boxArticleSide" id="Right_article_feed">This might interest you:

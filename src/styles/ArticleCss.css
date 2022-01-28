@@ -10,6 +10,8 @@
   padding: 5px;
   border: 2px solid grey;
   background: #ffffff;
+  overflow: hidden;
+  height: 100%;
 }
 
 .boxComRight {
@@ -20,6 +22,8 @@
   padding: 5px;
   border: 2px solid grey;
   background: #ffffff;
+  overflow: hidden;
+  height: 100%;
 }
 .boxArticleSide {
   float: right;
@@ -28,7 +32,9 @@
   padding: 15px;
   border: 2px solid grey;
   background: #ffffff;
-  transform: scale(0.7);
+  margin-top: 60px;
+  transform: scale(1);
+
 }
 
 .boxArticle {

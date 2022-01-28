@@ -1,49 +1,80 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import Articles from "../modules/Articles";
-import ArticleCard from "./ArticleCard";
-import { Grid, Container, Alert } from "@mui/material";
-import { Box } from "@mui/material";
+import React from "react";
 import ArticleCss from "../styles/ArticleCss.css";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import { Grid } from "@mui/material";
 
-//The function needs to be updated with relevant naming to fetch 
+//The function needs to be updated with relevant naming to fetch
 //different objects. I.e fetchAdd, setAdd etc.
 
 const CommercialCardList = () => {
-  const { category } = useParams();
-  const [articles, setArticles] = useState([]);
-  const [message, setMessage] = useState();
-
-  //fetchAdd
-  const fetchArticles = async () => {
-    const data = await Articles.index(category);
-    if (data.message || data.length === 0) {
-      setMessage(
-        "We don't have commercial available at the moment, please try again later."
-      );
-    } else {
-      setArticles(data);
-    }
-  };
-  useEffect(() => {
-    fetchArticles();
-  }, [category]);
-
-  const collectionOfArticles = articles.map((article) => {
-    return (
-      <Grid item key={article.id} md={12}>
-        <ArticleCard article={article} />
-      </Grid>
-    );
-  });
-
   return (
     <Grid>
-      <Grid container spacing={4} data-cy="commercial-collection">
-        {collectionOfArticles}
-      </Grid>
+      <ImageList sx={{ width: 200 }} cols={1}>
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <img
+              src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+              srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+              alt={item.title}
+              loading="lazy"
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
     </Grid>
   );
 };
 
 export default CommercialCardList;
+
+const itemData = [
+  {
+    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+    title: "Breakfast",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
+    title: "Burger",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
+    title: "Camera",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
+    title: "Coffee",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
+    title: "Hats",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
+    title: "Honey",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
+    title: "Basketball",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
+    title: "Fern",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
+    title: "Mushrooms",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
+    title: "Tomato basil",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
+    title: "Sea star",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
+    title: "Bike",
+  },
+];
